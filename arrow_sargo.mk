@@ -5,17 +5,17 @@
 #
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/google/bonito/aosp_sargo.mk)
+$(call inherit-product, device/google/bonito/arrow_sargo.mk)
 
-include device/google/bonito/device-lineage.mk
+include device/google/bonito/device-arrow.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3a
-PRODUCT_NAME := lineage_sargo
+PRODUCT_NAME := arrow_sargo
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2220
